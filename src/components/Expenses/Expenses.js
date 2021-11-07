@@ -18,7 +18,6 @@ function Expenses(props) {
       {props.expenses
         .filter((item) => getYear(item.date).toString() === filterYear)
         .map((item, i) => {
-          console.log(item);
           return (
             <ExpenseItem
               key={i}
